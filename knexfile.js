@@ -23,3 +23,5 @@ module.exports = {
     },
   }, 
 };
+
+// .where('u.id',id)
