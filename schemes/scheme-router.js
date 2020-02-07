@@ -42,6 +42,8 @@ router.get('/:id/steps', (req, res) => {
     }
   })
   .catch(err => {
+    console.error("line45 console.error===>",err);
+    console.log("err:","line46",err)
     res.status(500).json({ message: 'Failed to get steps' });
   });
 });
@@ -53,7 +55,7 @@ router.post('/', (req, res) => {
   .then(scheme => {
     res.status(201).json(scheme);
   })
-  .catch (err => {
+  .catch (err => {console.error("the err:is hereeee",err);console.log("err$$$$***&",err)
     res.status(500).json({ message: 'Failed to create new scheme' });
   });
 });
